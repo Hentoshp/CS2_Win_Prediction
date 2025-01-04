@@ -13,13 +13,19 @@ Logistic regression classification model predicting team wins in Counter-Strike 
 - Model is currently only available for faceit players in NA, plan to expand to EU regions next.
 
 ## Dependencies
-
-
+- Pandas
+- Numpy
+- requests
+- time
+- sckit-learn
 
 ## Code files:
 - **Win Prediction Data Mining and Processing**: Contains code used to mine player data from FACEIT API. Pulled 50,000 player_ids from faceit leaderboard then randomly selected 1,000 players from the player_id pool. Took 3 matches from each randomly selected player_id and calculated match statistics (avg team win percentage for map, avg K/R ratio for map, avg team ELO). After calculating match statistics, ended with 1500 observations, the rest of the data was not usable either due to deleted accounts, old maps not longer in FACEIT pool, or matches played in CSGO.
+
 - **Win Prediction Model Fitting and Tuning**: Contains code used for model fitting and tuning. Tried 3 different model types, logistic regression, random forests, and support vector machines. Validated predictive accuracy and model tuning (for random forets and SVM) with cross validation. Currently logistic regression has the highest predictive accuracy 78%. May change with an expanded dataset, also plan to try different types of models.
+
 - **Win Prediction Applied**: Contains code to use model applied to new data. Input player nicknames of each team and map, code will output array containing the win probability of each team. Looking into an easier input system rather than having to type all 10 player nicknames.
+
 - **Win Predictions Functions**: Contains all functions defined in win prediction code files, see below for explanation of each function.
 
 ## Functions:
