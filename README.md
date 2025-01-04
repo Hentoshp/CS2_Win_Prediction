@@ -143,12 +143,23 @@ Uses a fitted model to calculate each team's probability of winning the match. t
 **Returns**:
 - array, with team a and team b win probabilities.
 
+### get_auth_key(): --> string
+
+**Description**:
+defined on separate file, used to hide auth key for API calls
+
+**Parameters**:
+- None 
+
+**Returns**:
+- string, of authentification key used for API calls
+
 
   
 ## License
 This project is licensed under the MIT License.
 
-You are free to use, modify, and distribute this software, provided that appropriate credit is given to the original author(s). This software is provided "as-is," without any warranties or guarantees.
+You are free to use, modify, and distribute this software, provided that appropriate credit is given to the original author. This software is provided "as-is," without any warranties or guarantees.
 
 For detailed information, see the LICENSE file in this repository.
 
