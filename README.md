@@ -1,6 +1,5 @@
 # CS2_Win_Prediction
-Designed and implemented a Support Vector Machine (SVM) model to forecast team wins in Counter-Strike 2. Achieved a predictive accuracy of 77% ± 0.92, after testing multiple models including Logistic Regression, Random Forests, neural net, and XGBoosted Trees.
-
+Designed and implemented a Support Vector Machine (SVM) model to forecast team wins in Counter-Strike 2. Achieved a predictive accuracy of 77% ± 0.92, after testing multiple models including Logistic Regression, Random Forests, neural net, and XGBoosted Trees. Extracted and processed a robust dataset of 9,651 observations from Faceit, an esports matchmaking service, API.
 
 ## Features
 - **Accurate Predictions:** Achieves 77% ± 0.92 predictive accuracy using support vector machine.
@@ -20,7 +19,6 @@ Designed and implemented a Support Vector Machine (SVM) model to forecast team w
 - time
 - sckit-learn
 - PyTorch
-- 
 
 ## Code files:
 - **Win Prediction Data Mining and Processing**: Contains code used to mine player data from FACEIT API. Pulled 50,000 player_ids from faceit leaderboard then randomly selected 1,000 players from the player_id pool. Took 3 matches from each randomly selected player_id and calculated match statistics (avg team win percentage for map, avg K/R ratio for map, avg team ELO). After calculating match statistics, ended with 1500 observations per pull, the rest of the data was not usable either due to deleted accounts, old maps not longer in FACEIT pool, or matches played in CSGO.
