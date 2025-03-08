@@ -1,8 +1,9 @@
 # CS2_Win_Prediction
-Logistic regression classification model predicting team wins in Counter-Strike 2 using FACEIT with 78% accuracy. Built on 1,500 observations from Faceit’s API, featuring scalable data pipelines, plans to expand dataset further. Showcases machine learning applications in esports analytics using Python (Pandas, NumPy, Requests, time, Scikit-learn).
+Designed and implemented a Support Vector Machine (SVM) model to forecast team wins in Counter-Strike 2. Achieved a predictive accuracy of 77% ± 0.92, after testing multiple models including Logistic Regression, Random Forests, neural net, and XGBoosted Trees.
+
 
 ## Features
-- **Accurate Predictions:** Achieves 78% predictive accuracy using logistic regression.
+- **Accurate Predictions:** Achieves 77% ± 0.92 predictive accuracy using support vector machine.
 - **Data Pipeline:** Automated extraction and preprocessing of match data from Faceit’s API.
 - **Clean Data Handling:** Employs advanced data cleaning and transformation techniques to ensure accurate results.
 - **Actionable Insights:** Outputs clear predictions for team wins based on historical player statistics.
@@ -18,11 +19,13 @@ Logistic regression classification model predicting team wins in Counter-Strike 
 - requests
 - time
 - sckit-learn
+- PyTorch
+- 
 
 ## Code files:
-- **Win Prediction Data Mining and Processing**: Contains code used to mine player data from FACEIT API. Pulled 50,000 player_ids from faceit leaderboard then randomly selected 1,000 players from the player_id pool. Took 3 matches from each randomly selected player_id and calculated match statistics (avg team win percentage for map, avg K/R ratio for map, avg team ELO). After calculating match statistics, ended with 1500 observations, the rest of the data was not usable either due to deleted accounts, old maps not longer in FACEIT pool, or matches played in CSGO.
+- **Win Prediction Data Mining and Processing**: Contains code used to mine player data from FACEIT API. Pulled 50,000 player_ids from faceit leaderboard then randomly selected 1,000 players from the player_id pool. Took 3 matches from each randomly selected player_id and calculated match statistics (avg team win percentage for map, avg K/R ratio for map, avg team ELO). After calculating match statistics, ended with 1500 observations per pull, the rest of the data was not usable either due to deleted accounts, old maps not longer in FACEIT pool, or matches played in CSGO.
 
-- **Win Prediction Model Fitting and Tuning**: Contains code used for model fitting and tuning. Tried 3 different model types, logistic regression, random forests, and support vector machines. Validated predictive accuracy and model tuning (for random forets and SVM) with cross validation. Currently logistic regression has the highest predictive accuracy 78%. May change with an expanded dataset, also plan to try different types of models.
+- **Win Prediction Model Fitting and Tuning**: Contains code used for model fitting and tuning. Tried various  model types, lLogistic Regression, Random Forests, neural net, and XGBoosted Trees. Validated predictive accuracy and model tuning with cross validation.
 
 - **Win Prediction Applied**: Contains code to use model applied to new data. Input player nicknames of each team and map, code will output array containing the win probability of each team. Looking into an easier input system rather than having to type all 10 player nicknames.
 
