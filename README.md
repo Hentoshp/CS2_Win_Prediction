@@ -1,5 +1,5 @@
 # CS2_Win_Prediction
-Designed and implemented a Support Vector Machine (SVM) model to forecast team wins in Counter-Strike 2. Achieved a predictive accuracy of 77% ± 0.92, after testing multiple models including Logistic Regression, Random Forests, neural net, and XGBoosted Trees. Extracted and processed a robust dataset of 9,651 observations from Faceit, an esports matchmaking service, API.
+Designed and implemented a Convolutional Neural Network to forecast team wins in Counter-Strike 2. Achieved a predictive accuracy of 77.11% ± 0.84, after testing multiple models including Logistic Regression, Support Vector Machine, Random Forests, and XGBoosted Trees Extracted and processed a robust dataset of 9,651 observations from Faceit, an esports matchmaking service, API.
 
 ## Features
 - **Accurate Predictions:** Achieves 77% ± 0.92 predictive accuracy using support vector machine.
